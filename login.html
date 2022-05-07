@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>userlogin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="header">
+  <h1>MY WALLET</h1>
+</div>
+<div align="right" style="padding: 10px">
+</div>
+<div class="sidebar">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="c.html"><i class="fa fa-fw fa-user"></i> About Us</a>
+  <a href="c.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+
+ 
+<body style="background-color: #E4E4E4">
+	<div class="box">
+	<form action="login.php" method="POST">
+	<div class="imgcontainer">
+    <img src="1.png" alt="Avatar" class="avatar">
+  
+  <br>
+  <h2 style="color:#3B9FAF">USER LOGIN</h2>
+    
+    <input type="text" placeholder="Enter Email" name="email" >
+<br>
+    
+    <input type="password" placeholder="Enter Password" name="password" required pattern="[A-Za-z0-9]+" title="Please Enter Correct Password">
+<br>       
+<br>
+    <button class="button1" type="submit"><span>Login</span></button>	
+    <a href="register.html"><button class="button1" type="button"><span>Register</span></button></a>
+</form>
+</div>
+</div>
+</body>
+</html>

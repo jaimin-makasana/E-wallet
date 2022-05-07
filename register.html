@@ -1,0 +1,65 @@
+<!DOCTYPEs html>
+<html lang="en">
+<head>
+<title>registration</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+	input[type=text], input[type=password],input[type=float], input[type=int], select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing:border-box;
+	}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+ <div align="right" style="padding: 10px">
+<a href="login.html"><button class="button1"><span>User Login</span></button></a>
+</div>
+<div class="sidebar" style="margin-top: 0px;">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="about.html"><i class="fa fa-fw fa-user"></i> About Us</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div> 
+
+<body style="background-color: rgb(46,162,171)">
+  <form name="myForm" action="register.php"  method="POST" style="display: block;
+    margin-top: 0px;">
+  <div class="container container-login">
+  <div  class="well" style="width:400px; ">
+
+  	<h1>Registration Form</h1>
+  	<br>
+  	<label>First Name:</label>
+  	<input type="text" name="fname" class="textbox"  placeholder="Enter Your First Name" required pattern="[A-Za-z]+" title="Please Enter Alphabat Only">
+  	<br>
+  	<label>Last Name:</label>
+  	<input type="text" name="lname" class="textbox" placeholder="Enter Your Last Name" required pattern="[A-Za-z]+" title="Please Enter Alphabat Only">
+  	<br>
+  	<label>Contact No:</label>
+    <input type="text" name="cno" class="textbox" placeholder="Enter Your Contact No" required pattern="[0-9]+" title="Please Enter Number Only">
+    <br>
+    <label>Aadhar No:</label>
+    <input type="text" name="ano" class="textbox" placeholder="Enter Your Aadhar No" required pattern="[0-9]+" title="Please Enter Number Only">
+  	<br>
+    <label>E-mail:</label>
+    <input type="text" name="email" class="textbox" placeholder="Enter Your E-mail"  title="Please Enter E-mail Only">
+    <br>
+    <label>Password:</label><br>
+    <input type="password" name="password" class="textbox" placeholder="Enter Your Password" required pattern="[A-Za-z0-9]+" title="Please Enter Alphabat & Number Only">
+  	<br>
+  	<br>
+  	<button type="reset" class="btn btn-danger">Reset</button> &nbsp;
+      <button type="submit" class="btn btn-success">Sign up</button>
+
+  </div>
+</div>
+</form>
+</body>
+</html>
